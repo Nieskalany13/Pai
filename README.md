@@ -1,2 +1,3 @@
 # Pai
-yolo
+yolo, Pracownia aplikacji internetowych
+Mateusz Kowalewski 4D
