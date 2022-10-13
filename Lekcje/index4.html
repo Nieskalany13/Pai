@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>PAI</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+        index = 0
+
+        var part1 = prompt("Jaki znak chcesz podać");
+        var part2 = parseInt(prompt("Co ile chcesz wyświetlić ten znak"));
+        var part3 = parseInt(prompt("Ile kolumn"))
+        var part4 = parseInt(prompt("Ile wierszy"))
+            for(k = 0; k < part4; k++)
+            {
+                for (l = 0; l < part3; l++){
+                  if (index == part2)
+                  {
+                    document.write(part1)
+                    index = 0
+                  }
+                  else
+                  {
+                    document.write("*")
+                    index++
+                }
+                }
+                document.write("<br>")
+                //index = 0
+            }
+
+    </script>
+</body>
