@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>PAI</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <script>
+       /* function Mnożenie(a,b) {
+        yolo = a*b
+
+        return yolo
+        }
+        var part1 = parseInt(prompt("Podaj liczbę"))
+        var part2 = parseInt(prompt("Podaj liczbę"))
+        
+        document.write(Mnożenie(part1,part2))
+*/
+        index = 0
+    if (confirm("Jeżeli chcesz wyświetlić prostokąt z gwiazdek, kliknij OK,jeżeli wciśniesz Anuluj dostaniesz linię poziomą z gwiazdek")) 
+    {
+        part1 = parseInt(prompt("Podaj szerokść prostokąta"));
+        part2 = parseInt(prompt("Podaj wysokość prostokąta"));
+
+        for( i = 0; i < part2; i++)
+        {
+            for(j = 0; j < part1; j++)
+            {
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+
+
+   } 
+   else 
+   {
+        part1 = parseInt(prompt("Podaj długość lini"))
+
+        for (l = 0; l < part1; l++) 
+        {  
+            document.write("*")
+            index++
+        }
+        
+
+ } 
+
+    </script>
+</body>
