@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>PAI</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            index = 100
+            index2 = 300
+    if (confirm("Czy grasz w gry?")) 
+    {
+        part1 = parseInt(prompt("Ulubiona gra komputerowa:"));
+        part2 = parseInt(prompt("Ile godzin spędziłeś w tej grze:"));
+        part3 = ("Jesteś w tym początkujący");
+        part4 = ("Poznałeś już tą grę");
+        part5 = ("Jesteś w tym mistrzem");
+        for(i = 0; i < 1; i++) {
+            if (index > part2) {
+            document.write(part3)
+            }
+            else{
+                if (index2 > part2) {
+            document.write(part4)
+            }
+            else{
+                if (index2 < part2) {
+            document.write(part5)
+            }
+            else{
+                document.write("");
+            }
+            }
+            }
+            
+        }
+   } 
+   else 
+   {
+    document.write("Bardzo dobrze, tak trzymaj");
+   }
+
+
+
+
+
+        </script>
+    </body>
+</html>
