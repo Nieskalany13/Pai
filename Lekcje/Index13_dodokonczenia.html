@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>PAI</title>
+        <meta charset="utf-8">
+        <title>zadaniePAI</title>
+    </head>
+    <body>
+
+
+        podaj pierwszą liczbę <input type="number" id="pole"><br>
+        podaj drugą liczbę <input type="text" id="opole"><br>
+        <br>
+
+        <form>
+            <legend>Wybierz</legend>
+            <input type="radio" value="+" name="radio"> + <br>
+            <input type="radio" value="-" name="radio"> - <br>
+            <input type="radio" value="*" name="radio"> * <br>
+            <input type="radio" value="/" name="radio"> / <br>
+        </form>
+
+        <button onclick="display()">wyświetl</button><br>
+
+        <p id="wynik1">.......</p>
+
+    <script type="text/javascript">
+
+        function display() {
+
+            Pierwszaliczba = document.getElementById("pole").value;
+            Drugaliczba = document.getElementById("opole").value;
+
+
+            var field = document.getElementsByName('radio');
+            var value1;
+            for(var i = 0; i < field.length; i++){
+                if(field[i].checked){
+                    value1 = field[i].value;
+                    if(value1 == "-")
+                    document.getElementById("wynik1")
+                }
+
+                }
+            }
+
+        }
+    </script>
+    </body>
+</html>
