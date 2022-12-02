@@ -1,0 +1,69 @@
+<body>
+
+
+    <div class="1">
+        <p id="znacznik1">Posiadasz serwerów:</p>
+    </div>
+
+        <div id="2">
+            <p id="znacznik2">0</p>
+        </div>
+
+        <button onclick="display()">Kup</button>
+        <button onclick="display2()">Sprzedaj</button><br>
+
+        <img  style = "width: 750px; height: 750px;"src = "JustToSuffer.gif">
+
+
+    <script>
+
+        function display() {
+
+            let Dodaj = document.getElementById("2");
+            i = parseInt(Dodaj.children[0].innerHTML);
+            i = i + 1;
+
+
+            if(i < 2)
+                {
+                    Dodaj.style.color = "red";
+                }
+
+            if(i > 2 && i < 5)
+                {
+                    Dodaj.style.color = "yellow";
+                }
+
+            if(i > 5)
+                {
+                    Dodaj.style.color = "lightgreen";
+                }
+
+            Dodaj.children[0].innerHTML = i;
+
+            
+                
+            
+        }
+
+
+        function display2() {
+            let Odejmij = document.getElementById("2");
+            i = parseInt(Odejmij.children[0].innerHTML);
+            if(i > 0)
+            {
+                i = i - 1;
+                if(i < 2)
+                {
+                    Odejmij.style.color = "red";
+                }
+                
+
+                Odejmij.children[0].innerHTML = i;
+            }
+
+        }
+
+    </script>
+
+</body>
