@@ -11,6 +11,8 @@
 
         <button onclick="display()">Kup</button>
         <button onclick="display2()">Sprzedaj</button><br>
+        <button onclick="displayzamów()">Zamów wiele sztuk</button>
+        <button onclick="displaysprzedaj()">Sprzedaj wiele sztuk</button><br>
 
         <img  style = "width: 750px; height: 750px;"src = "JustToSuffer.gif">
 
@@ -62,6 +64,22 @@
                 Odejmij.children[0].innerHTML = i;
             }
 
+        }
+
+        function displayzamów() {
+            let zamow = parseInt(prompt("Podaj ilość sztuk"));
+            dodajwiele = document.getElementById("znacznik2");
+            i = zamow + parseInt(dodajwiele.innerHTML)
+
+            dodajwiele.innerHTML = i;
+        }
+
+        function displaysprzedaj() {
+            let sprzedaj = parseInt(prompt("Podaj ilość sztuk"));
+            sprzedajwiele = document.getElementById("znacznik2");
+            i = parseInt(sprzedajwiele.innerHTML) - sprzedaj;
+
+            sprzedajwiele.innerHTML = i;
         }
 
     </script>
