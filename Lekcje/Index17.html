@@ -1,0 +1,48 @@
+<body>
+
+
+    <p id="znacznikP">5</p>
+    <button id="przycisk1" onclick="display()">Zwiększ</button>
+    <button id="przycisk2" onclick="display2()">Zmniejsz</button>
+
+    <script>
+        function display() {
+            let Dodaj = document.getElementById("znacznikP").innerHTML;
+            let i = parseInt(Dodaj);
+            i = i + 1;
+
+
+            if (i < 10) {
+            document.getElementById("przycisk2").style.visibility = "hidden";
+            }
+
+            else {
+            document.getElementById("przycisk2").style.visibility = "visibility";
+            document.getElementById("przycisk1").style.visibility = "hidden";
+            }
+
+            document.getElementById("znacznikP").innerHTML = i;
+
+        }
+
+
+
+        function display2() {
+            let Odejmij = document.getElementById("znacznikP").innerHTML;
+            let i = parseInt(Odejmij);
+            i = i - 1;
+
+            if (i > 0) {
+                document.getElementById("przycisk1").style.visibility = "hidden";
+                
+            }
+
+            else {
+                document.getElementById("przycisk1").style.visibility = "visibility";
+                document.getElementById("przycisk2").style.visibility = "hidden";
+            }
+
+            document.getElementById("znacznikP").innerHTML = i;
+                      } 
+    </script>
+</body>
