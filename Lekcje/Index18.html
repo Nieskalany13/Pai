@@ -1,0 +1,28 @@
+<body>
+
+    <form>
+        <legend>Wybierz napój do picia</legend>
+            <input type="radio" value="kawa" name="radio"> kawa
+            <input type="radio" value="herbata" name="radio" checked> herbata        
+    </form>
+    
+    <input type="text" id="pole">
+    <button onclick="display()">zatwierdź</button>
+    <p id="rodzaj" >.....</p>
+
+    <script>
+        function display() {
+            var value1;
+            pij = document.getElementsByName("radio");
+            var rodzaj = document.getElementById("pole");
+            for(i = 0; i < pij.length; i++) {
+                if(pij[i].checked){
+                    value1 = pij[i].value;
+                }
+            }
+            document.getElementById("rodzaj").textContent = value1 + " " + rodzaj.value;
+        }
+
+
+    </script>
+</body>
